@@ -1,4 +1,4 @@
-# NET3010
+# NET3010 - Lab 1
 
-Publically Accessible Lab Work Collateral Files
+Web Server, Development Environment, and basic HTML
 
