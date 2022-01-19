@@ -1,26 +1,84 @@
-<!-- 
-    
-ALL ABOUT SEMANTIC HTML 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prof. Frank Emanuel">
+    <meta name="email" content="emanuef@algonquincollege.com">
+    <meta name="date" content="2022-01-19">
 
-definition of semantic - semiotics is the study of 
-signs in literature. Those things that point to something
-else as a kind of signpost in the road. Signs are much
-simpler than symbols as they state plainly what they are 
-pointing at where symbols remain polyvalent even when
-collapsed into a meaning. A sign in this sense is like a 
-traffic sign, only to be interpretted in a singular way. 
-When the sign says stop, you better listen.
+    <style>
 
-Anatomy of the Web Page
+        body {
 
-The semantic layout is all about organizing our webpage in such a way 
-as the labels provide a signpost guide to the content. These signs allow
-us to easily and logically target sections of our website for formatting
-and interaction. These labes consist of id tags and class tags. Id tags 
-are always singular, as in you have one #header, and class tags are often plural
-as in you can have many .article blocks. Semantic layout is achieved only
-when your tags tell the story of how your document is structured. 
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt;
 
-Frank L. Emanuel, Ph.D. (c) 2022 
+        }
 
--->
+        .content {
+
+
+            font-size: 14pt;
+            padding: 10pt 5pt;
+        }
+
+        .content code {
+
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+
+        }
+
+        footer {
+
+            text-align: center;
+            background-color: cadetblue;
+            font-size: 10pt;
+            padding: 2pt 0pt;
+            font-style: italic;
+
+        }
+
+        header {
+
+            font-size: 18pt;
+            text-align: center;
+            padding-bottom: 12pt;
+            padding-top: 3pt;
+        }
+
+    </style>
+
+    <title>ALL ABOUT SEMANTIC HTML</title>
+</head>
+<body>
+    <header>ALL ABOUT SEMANTIC HTML</header>
+
+    <div id="definition">
+        <b class="define">definition of semantic</b> - semiotics is the study of                            
+        signs in literature. Those things that point to something
+        else as a kind of signpost in the road. Signs are much
+        simpler than symbols as they state plainly what they are 
+        pointing at where symbols remain polyvalent even when
+        collapsed into a meaning. A sign in this sense is like a 
+        traffic sign, only to be interpretted in a singular way. 
+        When the sign says stop, you better listen.
+    </div>
+
+    <h2>Anatomy of the Web Page </h2>
+
+    <p class="content">
+        The semantic layout is all about organizing our webpage in such a way
+        as the labels provide a signpost guide to the content. These signs allow
+        us to easily and logically target sections of our website for formatting
+        and interaction. These labes consist of id tags and class tags. Id tags
+        are always singular, as in you have one <code>#header</code>, and class tags are often plural
+        as in you can have many <code>.article</code> blocks. Semantic layout is achieved only
+        when your tags tell the story of how your document is structured.
+    </p>
+
+    <footer>Frank L. Emanuel, Ph.D. (c) 2022</footer>
+
+</body>
+</html>
