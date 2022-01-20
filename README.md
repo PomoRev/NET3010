@@ -1,6 +1,6 @@
 # NET3010
 
-Lecture 2 working HTML file(s).
+Working Files for Dr. Emanuel's Lab (011) on Jan 19. 
 
 Example of a collateral document (MS Word).
 
