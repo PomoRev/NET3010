@@ -7,6 +7,11 @@
     <meta name="email" content="emanuef@algonquincollege.com">
     <meta name="date" content="2022-01-20">
     <style>
+        * {
+
+            background-color: skyblue;
+
+        }
         body {
 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,11 +19,28 @@
 
         }
 
+        #bodytext {
+
+            color: saddlebrown;
+
+        }
+
+        #bodytext:hover {
+
+            background-color: seagreen;
+
+        }
+
+        .bodytext {
+
+            color: blue;
+        }
+
         table { 
             
-            background-color: lightslategray;
+            background-color: red;
             width: 40%;
-            margin: 10pt auto;
+            margin: 20pt auto;
             text-align: center;           
             border-style: solid;
             border-color: black;
@@ -28,6 +50,7 @@
         td {
 
             border: 3px;
+            border-color: white;
             border-style: dashed;
 
         }
@@ -44,13 +67,13 @@
             width: 25%;
 
         }
-/*
-        col:nth-child(2n){
+
+        col:nth-child(2n) {
 
             background-color: cornsilk;
 
         }
-*/
+
     </style>
     <title>Table Example</title>
 </head>
@@ -61,10 +84,10 @@
             <col><col><col><col>
         </colgroup>
         <tr>
-            <th colspan="4">Table Header</th>
+            <th colspan="4" style="background: tomato;">Table Header</th>
         </tr>
         <tr>
-            <td>1</td><td>2</td><td>3</td><td>4</td>
+            <td>1</td><td style="background-color: pink;">2</td><td>3</td><td>4</td>
         </tr>
         <tr>
             <td rowspan="2">1</td><td>2</td><td>3</td><td>4</td>
@@ -79,5 +102,7 @@
             <td>1</td><td>2</td>
         </tr>
     </table>
+
+    <p id="bodytext">This is some text.</p>
 </body>
 </html>
