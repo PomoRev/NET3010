@@ -1,0 +1,79 @@
+html {
+
+    --textColor: rgb(27, 27, 27); 
+    --bgColor: rgb(236, 232, 223); 
+
+}
+
+body {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    background-color: var(--bgColor);
+    padding: 15pt;
+
+}
+
+
+/* text elements */
+
+header {
+
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.borderRound {
+
+    border-style: solid;
+    border-radius: 15%;
+
+}
+
+/* specialty elements */
+
+#imageOfFlash {
+
+    width: 300px;
+    height: auto;
+    border-radius: 5%;
+
+}
+
+.imageHolder {
+
+    text-align: center;
+    padding: 15px;
+    margin: 10px 30px;
+    background-color: brown;
+
+}
+
+/* info card */
+
+#breedCard {
+
+    padding: 30pt;
+    font-size: 10pt;
+    width: 400px;
+    position: fixed;
+    left: -460px;
+    top: 46px;
+
+    background-color: rgb(87, 83, 78);
+
+    transition: left;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in;
+
+}
+
+
+#breedCard:hover {
+
+    left: -20px;
+
+}
+
