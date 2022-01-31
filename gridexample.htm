@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prof. Frank Emanuel">
+    <meta name="email" content="emanuef@algonquincollege.com">
+    <meta name="date" content="2022-01-30">
+    <link rel="stylesheet" href="Lecture4.css">
+    <style>
+        .gridcontainer {
+            display: grid;
+            grid-template-areas : 	"nav head head"
+                                    "nav image image"
+                                    "nav content content"
+                                    "blank  blank blank";
+            grid-template-columns : 100px 1fr 3fr;
+        }
+        
+        header {
+            grid-area : head;
+            background-color : blue;
+            color: white;
+            text-align: center;
+        }
+        
+        nav {
+            grid-area : nav;
+            background-color : blue;
+            color: pink;
+
+        }
+        
+        .content {
+            grid-area : content;
+        }
+        
+        .image {
+            grid-area : image;
+            justify-self : center;
+            width: 70em;
+            max-width: 100%;
+        }
+        
+        footer {
+            grid-area : footer;
+            background-color : yellow;
+            font-size: 10pt;
+            text-align: right;
+        }
+
+        li {
+
+            list-style: none;
+
+        }
+
+        ul {
+
+            padding-inline-start: 5px;
+            padding-inline-end: 10px;
+
+        }
+
+        button {
+
+            width: 5rem;
+
+        }
+
+    </style>
+    <title>Grid-tastic Fun!</title>
+</head>
+<body>    
+
+    <div class="gridcontainer">
+
+        <header>Top of Foxy's Page</header>
+
+        <nav>
+            Nav Buttons
+            <ul>
+                <li><button>Home</button></li>
+                <li><button>Garage</button></li>
+                <li><button>Cat Bed</button></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <p>Hey this my old cat Miss Foxy Wigglebottoms.</p>
+            <p>
+                She was a pretty great cat, pretty chill and
+                loved to kill small animals in front of me!
+            </p>
+        </div>
+
+        <img src="images/foxy_wigglebottoms.jpg" alt="Foxy the cat" class="image">
+
+        <footer>Footer Matter like &copy; Frank Emanuel</footer>
+
+
+
+    </div>
+
+</body>
+</html>

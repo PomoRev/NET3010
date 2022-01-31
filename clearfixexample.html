@@ -1,0 +1,53 @@
+<!DOCTYpE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="prof. Frank Emanuel">
+    <meta name="email" content="emanuef@algonquincollege.com">
+    <meta name="date" content="2022-01-30">
+    <link rel="stylesheet" href="Lecture4.css">
+    <style>
+
+        .image {
+				float: right;
+				width: 50%;
+			}
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        } 
+
+    </style>
+    <title>Clearfix Example</title>
+</head>
+<body>
+    <header>Breaking the Document Flow</header>
+
+    <h1>Fun with CSS Flow</h1>
+
+
+		<div class="clearfix">
+		
+			<img class="image" 
+                src="images/small_frank.jpg" 
+                alt="professor Frank in CBC shirt">
+
+			<h2>Birthday Celebrations</h2> 
+		
+			<p> 
+                This is me, enjoying my time with friends playing 
+                boardgames up at the family cottage. Every year 
+                I like to have a large group of friends join 
+                us at the cottage for a day filled with boardgames, 
+                food, and swimming if the lake is warm enough. 
+                Often we will have two or three different games 
+                going at once. 
+			</p>
+
+		</div>
+
+</body>
+</html>
