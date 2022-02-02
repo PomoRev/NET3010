@@ -1,0 +1,81 @@
+/* General CSS */
+
+html {
+
+    --bgMain: rgb(231, 231, 231);
+    --bgFeature: rgb(25, 25, 251);
+    --textMain: rgb(12, 12, 12);
+    --textFeature: rgb(236, 235, 235);
+    --textAlt: rgb(6, 6, 15);
+
+}
+
+body {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--bgMain);
+    color: var(--textMain);
+
+}
+
+header, footer, nav {
+
+    background-color: var(--bgFeature);
+    color: var(--textFeature);
+    padding: 4pt;
+    margin: 4pt;
+
+}
+
+main, footer {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+    font-style: italic;
+
+}
+
+a:hover {
+
+    color: var(--textAlt);
+}
+
+#masthead, .slogan {
+
+    text-align: right;
+    padding-right: 2%;
+
+    font-size: 4em;
+    font-style: italic;
+
+}
+
+.slogan {
+
+    font-size: 1.2em;
+
+}
+
+/* Mobile Layout */
+
+#largescreen {
+
+    display: none;
+
+}
+
+/* Large Screen Layout min width 800px */
+
+
+
+
+/* Desktop Screen Layout min width of 1200px */
+
+
+
