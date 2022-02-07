@@ -1,0 +1,13 @@
+window.x   =   4
+window.y   =   
+window.PI  =   3.1415
+
+window.foo() {}
+
+foo.y = 17
+    local x = 'hello'
+
+OUTPUT: hello 17
+OUTPUT: 4 17
+
+OUTPUT: 4 indefined

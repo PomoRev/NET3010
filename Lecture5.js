@@ -1,3 +1,6 @@
+// Frank Emanuel
+// February 7, 2022
+
 function myFunction () {
 
     // some variables that are scoped to myFunction
@@ -6,6 +9,9 @@ function myFunction () {
 
     console.log(a + ' ' + b + '.');
 
-    
+    console.log( typeof(c));
 
+    
 }
+
+(c) ? console.log( 'the value is true') : console.log( 'the value is false');
