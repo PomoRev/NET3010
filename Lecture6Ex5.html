@@ -95,10 +95,10 @@
 			
 				if ((fname.value != "") && (lname.value != "")){
 					if (nname.value == ""){
-						suggestion.innerhtml = "suggested nickname";
+						suggestion.innerHTML = "suggested nickname";
 						nname.value = fname.value.charAt(0) + lname.value;
 					}else{
-						suggestion.innerhtml = "";
+						suggestion.innerHTML = "";
 					}
 				}	
 			}
@@ -109,8 +109,10 @@
 				var results = document.getElementById("appform");
 
 				let error = false;
+
 				for (let i = 0; i < results.length; i++){
 					results.elements[i].style.background = "white";
+
 					if (results.elements[i].value == ""){
 						results.elements[i].style.background = "red";
 						error = true;
@@ -130,7 +132,8 @@
 				
 				if (error){
 					warning.innerHTML = "Please fill in indicated fields.";
-				}
+				} else warning.innerHTML ="";
+		 
 				
 				return (!error);
 			

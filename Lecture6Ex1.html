@@ -6,13 +6,16 @@
 		</title>
 	</head>
 	<body>
-		<h1>You know you want to click this link!</h1>
+		<h1>You know you really want to click this link!</h1>
 		<p>
 			<a id="somelink" href="https://www.w3schools.com/">tutorials</a>
 		</p>
 		<script>
-			url = document.links.somelink.href;
-			document.write('The URL is: ' + url);
+			document.write( " Hey there! <BR>");
+			myURL = somelink.href;
+			document.write('The URL is: ' + myURL);
+			document.write( "<br>last time I fixed this: " 
+			+ document.lastModified);
 		</script>
 	</body>
 </html>

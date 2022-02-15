@@ -2,12 +2,20 @@
 <html>
 	<head>
 		<title>DOM Experiments</title>
+		<script>
+			function myScriptFunction() {
+
+				urls = document.getElementsByClassName( "linko" );
+
+				urls.forEach( document.writeln( "hello <br>" ) );
+			}
+		</script>
 	</head>
 	<body>
 		<h1>You know you want to click this</h1>
 
 		<p>
-			<a id="somelink" href="https://www.w3schools.com/">tutorials</a>
+			<a class= "linko" id="somelink" href="https://www.w3schools.com/">tutorials</a>
 		</p>
 
 		<p class="librarylink">
@@ -17,7 +25,7 @@
 		</p>
 	
 		<p id="gaming">
-			<a href="https://watch.lolesports.com/home">the games</a>
+			<a class="linko" href="https://watch.lolesports.com/home">the games</a>
 		</p>
 	
 		<hr>
@@ -25,11 +33,11 @@
 		<script>
 			// var url = document.links.somelink.href;
 			// url = someotherlink.href;
-			// url = document.getElementById('somelink').href;
+			url = document.getElementById('somelink').href;
 
 			document.write('The URL is: ' + url + '<BR>');
 			
-			// urls = document.links;
+			urls = document.links;
 		
 			// for (url of urls){
 			// 	document.writeln('-> ' + url.href + '<BR>');
@@ -38,6 +46,9 @@
 			// for (let i = 0; i < document.links.length; i++){
 			// 	document.writeln ('#' + (i + 1) + ' ' + document.links[i].href + 'link ' + '<BR>');	
 			// }
+
+			myScriptFunction();
+
 
 		</script>
 	</body>
