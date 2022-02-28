@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prof. Frank Emanuel">
+    <meta name="email" content="emanuef@algonquincollege.com">
+    <meta name="date" content="2022-02-27">
+    <title>AJAX Example</title>
+</head>
+<body>
+    <header>AJAX Example</header>
+    <button onClick=getCountries() class="remoteGrabber">Find Countries</button>
+
+    <!--    uses the RESTful app to return a JSON of all the world's countries: 
+            https://api.countrylayer.com/vs/all
+        -->
+
+    <script>
+
+        function getCountries() {
+
+            let ajaxRequest = new XMLHttpRequest();
+
+            // at some point this key will stop working because it is limited to 50 hits
+            // you can generate your own free key at the countrylayer website. Great for testing.
+
+            ajaxRequest.open('GET', "http://api.countrylayer.com/v2/all?access_key=cc842a43dddedb201b920104b9092190", true);
+
+            ajaxRequest.onload = function() {
+
+                if (ajaxRequest.status == 200) {
+
+                    countryListStatus.innerText = "";
+                    
+                    let countries = JSON.parse(this.response);
+
+                    console.log (countries);
+
+                    countries.forEach(country => {
+
+                        const countryBox = document.createElement('div');
+                        countryBox.innerHTML = country.name + "<br> capital: " + country.capital;
+                        countryBox.style.padding="4px";
+                        countryBox.style.backgroundColor="yellow";
+                        countryBox.style.margin="2px";
+
+                        document.getElementById("countryListStatus").appendChild(countryBox);
+
+                    });
+                    
+                } else {
+
+                    countryListStatus.innerText = "Sorry, no countries could be retrieved."
+
+                }
+            }
+
+            ajaxRequest.send();
+
+        }
+    </script>
+
+    <div id="countryListStatus">
+        No countries selected.
+    </div>
+
+
+</body>
+</html>

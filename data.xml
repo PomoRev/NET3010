@@ -1,0 +1,33 @@
+
+
+<!-- 
+Syntactical Rules for XML
+
+1. All XML elements must have a closing tag
+2. XML tags are case sensitive
+3. XML elements must be properly nested
+4. XML documents must only have one root elements
+5. XML attribute values are surrounded by double quotes
+6. <, >, &, ', and " all have special meaning in XML.
+7. Whitespace is preserved (unlike HTML)
+8 XML element names cannot contain spaces, cannot start 
+  with numbers or punctuation, and cannot state with the letter "xml" 
+  
+  -->
+
+<!-- 
+
+    samle DTD for validating the elements in our XMLs
+
+<!ELEMENT message (#PCDATA)>
+<!ATTLIST message date CDATA #REQUIRED>
+ -->
+
+
+
+<!-- 
+    name of recipe
+    ingredients (list)
+    cooking instrutions (ordered list)
+    picture of the finished dish 
+-->

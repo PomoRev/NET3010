@@ -1,0 +1,36 @@
+
+{
+    "library" : [
+
+        {   "category" : "cooking" ,
+            "book" : [
+                {   "title" : "Everyday Italian",
+                    "langugage" : "en",
+                    "author" : "Giada de Laurentiis",
+                    "year" : 2005,
+                    "price" : 30.00
+                }
+            ]
+        },
+
+        {   "category" : "children" ,
+            "book" : [
+                {   "title" : "Thanks a Lot, Universe",
+                    "langugage" : "en",
+                    "author" : "Chad Lucas",
+                    "year" : 2021,
+                    "price" : 21.99
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+// name of recipe
+// ingredients (list)
+// cooking instrutions (ordered list)
+// picture of the finished dish 
+
