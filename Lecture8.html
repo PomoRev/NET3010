@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prof. Frank Emanuel">
+    <meta name="email" content="emanuef@algonquincollege.com">
+    <meta name="date" content="2022-03-04">
+
+    <style>
+        img#monkey{
+            
+            max-height: 15em;
+
+        } 
+    </style>
+
+    <!-- Hosted version of jQuery, current stable version is 3.6 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+        var images = ["monkey1.jpg", "monkey2.jpg", "wildmanfrank.jpg", "monkey3.jpg"];
+        var currentImage = 0;
+
+        function changepic() {
+
+            // $ is just a symbol for jQuery this is an example of
+            // how a library can behave in a way that may conflict with
+            // your coding patterns.
+
+            jQuery("#monkey").fadeOut(250);
+
+            let srcTarget = "images//" + images[currentImage++];
+
+            jQuery("#monkey").attr("src", srcTarget);
+					
+            if (currentImage == images.length){
+                currentImage = 0; 
+            }
+				
+            $("#monkey").fadeIn(250);
+
+        }
+
+    </script>
+
+    <title>jQuery Playground</title>
+</head>
+<body>
+    <header>jQuery Playground</header>
+    <p id="introduction">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium 
+        eveniet aspernatur ea porro, fugiat natus corporis molestiae, libero 
+        voluptatibus minima ab vero exercitationem quisquam saepe earum 
+        voluptatum sunt rem inventore!
+    </p>
+    <div class="spacer"></div>
+    <button id="clicker">Click</button>
+    <div class="spacer"></div>
+    <img id="monkey" src="images/monkey4.jpg" alt="firstmonkey">
+
+    <!-- JavaScript that leverages jQuery as a library -->
+    <script>
+        $("div.spacer").height(10);
+        $("#clicker").click(changepic);
+    </script>
+
+</body>
+</html>
