@@ -126,6 +126,12 @@ nav button:active, #closeLogin:active, #loginSubmit:hover {
     
 }
 
+errorBox {
+
+    background-color: rgb(248, 47, 47);
+
+}
+
 footer {
 
     text-align: right;
