@@ -7,6 +7,7 @@
         if (trim($_FILES['uploadable']['name']) == "") {
 
             $errormessage = "File name is blank.";
+            
         } else {
 
             $target_directory = "files\\";

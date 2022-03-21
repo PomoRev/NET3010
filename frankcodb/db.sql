@@ -8,7 +8,6 @@ CREATE TABLE users (
 	permissions INT
 );
 
-
 INSERT INTO users(username, password, permissions) 
 	VALUES ('admin','password', 3);
 

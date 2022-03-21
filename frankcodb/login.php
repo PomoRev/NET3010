@@ -50,6 +50,7 @@
 							</TR>
 						</TABLE>
 					</FORM>
+
 <?PHP
 	} else {
 		
@@ -61,8 +62,7 @@
 						<INPUT type="submit" value="LOG OUT">
 					</FORM>
 
-<?PHP		
-		
+<?PHP			
 	}
 ?>
 					<BR>

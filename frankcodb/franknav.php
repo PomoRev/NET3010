@@ -18,7 +18,9 @@
 
 ?>
 		<DIV class="navbutton">
-			<A href="login.php"><?php echo ($_SESSION['UserName'] == 'anonymous') ? "Login" : "Logout"; ?></A>
+			<A href="login.php">
+				<?php echo ($_SESSION['UserName'] == 'anonymous') ? "Login" : "Logout"; ?>
+			</A>
 		</DIV>
 
 	</DIV>
